@@ -1,118 +1,152 @@
-<html>
- <head>
-  <title>
-   C9 Freelancer
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Inter', sans-serif;
-        }
-  </style>
- </head>
- <body class="bg-white">
-    <header class="container mx-auto flex justify-between items-center p-6">
-        <div class="flex items-center">
-          <img alt="C9 Freelancer logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/oJASnluq1HpcD1ZdCQoS2kDUa8I04s6uryXhdLWffUfnNBUnA.jpg" width="40"/>
-          <span class="text-xl font-bold">C9Freelancer</span>
-        </div>
-        <nav class="space-x-8">
-          <a class="text-gray-700" href="#">Home</a>
-          <a class="text-gray-700" href="#">About</a>
-          <a class="text-gray-700" href="#">How It Works</a>
-          <a class="text-gray-700" href="#">Contact Us</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="bg-white">
+
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between p-4">
+            <div class="flex items-center">
+                <img 
+                    alt="Company Logo" 
+                    class="h-10 w-10" 
+                    src="/assets/Firefox_Screenshot_2024-10-26T10-24-33.505Z.png" 
+                />
+                <span class="ml-2 text-xl font-semibold text-gray-800">C9Freelancer</span>
+            </div>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a class="text-gray-800 hover:text-gray-600" href="#">Home</a>
+                <a class="text-gray-800 hover:text-gray-600" href="#">About</a>
+                <a class="text-gray-800 hover:text-gray-600" href="#">How It Works</a>
+                <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
+            </div>
+    
+            <!-- Buttons and Hamburger Icon -->
+            <div class="flex items-center space-x-4">
+                <button class="bg-green-500 text-white px-4 py-2 rounded hidden md:block">Join Now</button>
+                <button class="border border-green-500 text-green-500 px-4 py-2 rounded hidden md:block">Sign In</button>
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
-        <div class="space-x-4">
-          <button class="px-4 py-2 border border-green-500 text-green-500 rounded">Join Now</button>
-          <button class="px-4 py-2 bg-green-500 text-white rounded">Sign In</button>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden flex flex-col space-y-2 p-4 hidden">
+            <a class="text-gray-800 hover:text-gray-600" href="#">Home</a>
+            <a class="text-gray-800 hover:text-gray-600" href="#">About</a>
+            <a class="text-gray-800 hover:text-gray-600" href="#">How It Works</a>
+            <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
+            <button class="bg-green-500 text-white px-4 py-2 rounded">Join Now</button>
+            <button class="border border-green-500 text-green-500 px-4 py-2 rounded">Sign In</button>
         </div>
-      </header>
-      
-      <main class="container mx-auto flex justify-between items-center p-12">
-        <div class="max-w-lg">
-          <h1 class="text-4xl font-bold mb-4">
-            C9 Freelancer is a platform where
-            <span class="text-green-500">best-in-class</span>
-            digital marketing and IT talents from around the globe go to get hired by the top agencies and firms in the world.
-          </h1>
-          <p class="text-gray-600">
-            C9 Freelancer strongly believes that the future of work lies in the hands of freelancers like you. This platform is designed to connect you directly with the best job opportunities anywhere in the world.
-          </p>
-        </div>
-        <div class="grid grid-cols-3 gap-4">
-          <img alt="Smiling man with glasses" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/2rcdjAaEs0qON9D3GQ43SvECeBdXpUxYYPHofpwViIfzNBUnA.jpg" width="100"/>
-          <img alt="Laptop" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/3zIIeOwzp5TdBqQtT4wLZ9w2BDftlq0VP1aPxtoDYQw2mAqTA.jpg" width="100"/>
-          <img alt="Smiling woman with striped shirt" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/f3OoeaexoZd7hIf4QM6HZXKN0lsMgrm7j3gTvRpmNK4f2EQdC.jpg" width="100"/>
-          <img alt="Woman holding a cup" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/c38ftqgW313obCEfIzLEGlAmSuNjPFT5eLRLlshDMJI3NBUnA.jpg" width="100"/>
-          <img alt="Emoji with hand sign" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/cO4w2ahZoz6aCBkChdhPfzMeoZYdyH7wIyfUPIX1REnoNBUnA.jpg" width="100"/>
-          <img alt="Smiling woman with orange sweater" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/Tsngb14fQTVOYyje90Vl9cb3lJRdS8QeW3xFXjjxVvz6NBUnA.jpg" width="100"/>
-          <img alt="Smiling man with blue shirt" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/8EAqiPrKDaLXGFoBqN3VrAxNfk0vSNqgju5odD4Rk8hYTA1JA.jpg" width="100"/>
-          <img alt="Coffee cup" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/OnckN4Iwsr6RHNitdlTGxhfjh9PJKseutERxV33MpjNwmAqTA.jpg" width="100"/>
-        </div>
-      </main>
-      
-
-
-
-
-
-
-
-
-
-
-  <div class="max-w-4xl mx-auto py-16 px-4 text-center py-20">
-    <h2 class="text-2xl font-semibold text-gray-800">
-     Check out what some members
-     <br/>
-     of C9 Freelancer have to say about the platform:
-    </h2>
-    <div class="mt-10 flex items-center justify-center">
-     <div class="relative">
-      <img alt="Portrait of a smiling woman" class="w-48 h-48 rounded-full object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/dMUpWpJXiM5RKBc5OqsVju1sEEaDyPyqlFeiLetJpOrEiBqTA.jpg" width="200"/>
-      <div class="absolute top-0 right-0 bg-teal-900 text-white p-2 rounded-full">
-       <i class="fas fa-quote-left">
-       </i>
-      </div>
-     </div>
-     <div class="ml-10 text-left">
-      <div class="text-gray-500 text-sm mb-2">
-       1 / 4
-      </div>
-      <p class="text-gray-700 text-lg mb-4">
-       “What makes us unique is our wide network of companies, employers, entrepreneurs, business owners, and agencies who share our vision of a future propelled by the globalization of talent, the emergence of exponential technologies, and the belief that tomorrow’s workforce is going to be dominated by remote professionals and freelancers.”
-      </p>
-      <div class="flex items-center">
-       <div class="bg-orange-500 text-white px-4 py-2 rounded-full">
-        <span class="font-semibold">
-         Carly C.
-        </span>
-        <br/>
-        <span class="text-sm">
-         UI/UX Designer, San Francisco
-        </span>
-       </div>
-      </div>
-      <div class="mt-4 flex items-center space-x-4">
-       <button class="text-gray-500 hover:text-gray-700">
-        <i class="fas fa-arrow-left">
-        </i>
-       </button>
-       <button class="text-gray-500 hover:text-gray-700">
-        <i class="fas fa-arrow-right">
-        </i>
-       </button>
-      </div>
-     </div>
     </div>
-   </div>
+    
+
+<!-- JavaScript for toggle functionality -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 
 
 
-   <div class="w-full py-16 sm:px-6 lg:px-8" style="background-color: #001f21;">
+<div class="container mx-auto px-4 py-8 mt-20 relative">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-2/3 w-11/12">
+            <h1 style="color: #424242;"  class="text-4xl font-semibold w-11/12 md:text-5xl font-medium text-gray-900 leading-relaxed md:leading-snug tracking-wide ">
+                C9 Freelancer is a platform where
+                <span class="text-green-500">
+                    best-in-class
+                </span>
+                digital marketing and IT talents from around the globe go to get hired by the top agencies and firms in the world.
+            </h1>
+            <p class="mt-4 text-gray-600 text-lg w-9/12 leading-relaxed">
+                C9 Freelancer strongly believes that the future of work lies in the hands of freelancers like you. This platform is designed to connect you directly with the best job opportunities anywhere in the world.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Mobile Image -->
+    <div class="hidden">
+        <img 
+            src="/assets/hero-image.png" 
+            alt="Hero Image" 
+            class="absolute top-0 right-0 w-full h-auto object-cover"
+            style="width: 620px; margin-right: -200px; margin-top: -60px;"
+        />
+    </div>
+
+    <!-- Desktop Image -->
+    <div class="hidden md:block ">
+        <img 
+            src="/assets/hero-image.png" 
+            alt="Hero Image" 
+            class="absolute top-0 right-0 w-full md:w-[60%] h-auto object-cover"
+            style="width: 620px; margin-right: -200px; margin-top: -60px;"
+        />
+    </div>
+</div>
+
+
+<div class="text-center mt-20 py-20">
+    <h2 class="text-4xl font-semibold mb-4 text-gray-800">
+        Check out what some members
+        <br />
+        of C9 Freelancer have to say about the platform:
+    </h2>
+    <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="flex items-center space-x-8">
+            <div class="relative">
+                <img
+                    alt="Portrait of a smiling woman"
+                    class="rounded-full object-cover w-48 h-48 md:w-72 md:h-72"
+                    src="https://storage.googleapis.com/a1aa/image/FmIDhAeEA5V4SKvcurea4BsROy3RhjLsSSAVG62xjrrAMoqTA.jpg"
+                />
+                <div class="absolute top-0 left-0 bg-gray-800 text-white rounded-full p-2">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+            <div class="text-left max-w-md">
+                <div class="text-gray-500 mb-2">1 / 4</div>
+                <p style="width: 600px;" class="text-gray-700 mb-4">
+                    “What makes us unique is our wide network of companies, employers, entrepreneurs, business owners, and agencies who share our vision of a future propelled by the globalization of talent, the emergence of exponential technologies, and the belief that tomorrow’s workforce is going to be dominated by remote professionals and freelancers.”
+                </p>
+                <div class="flex items-center">
+                    <div style="background-color: #f66744;" class="bg-orange-500 text-white rounded-full px-4 py-2">
+                        Carly C.
+                        <br />
+                        <span class="text-sm">UI/UX Designer, San Francisco</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-4 space-x-4">
+        <button class="text-black hover:text-gray-700">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="text-black hover:text-gray-700">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+
+
+<div class="w-full py-16 sm:px-6 lg:px-8 my-20" style="background-color: #001f21;">
     <div class="max-w-6xl mx-auto">
       <div class="text-center">
         <div class="text-5xl font-bold mb-8">
@@ -134,13 +168,13 @@
           </span>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 py-20">
+      <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 ">
         <div class="lg:w-1/2 text-lg leading-relaxed mb-8 lg:mb-0">
           <p class="text-white">
             More and more companies in the world are realizing that they can augment their workforce, deepen their talent pools, and diversify their services by employing freelancers and remote workers. Moreover, they’re also realizing they can do this while enjoying significant cost savings. C9 Freelancer aims to make this reality accessible to both employers and remote workers alike.
           </p>
           <div class="mt-8">
-            <div class="inline-block bg-orange-500 text-white py-2 px-4 rounded-full">
+            <div style="background-color: #f66744;" class="inline-block bg-orange-500 text-white py-2 px-4 rounded-full">
               <span class="block font-bold">Philip Lew</span>
               <span class="block text-sm">CEO of C9Freelancer</span>
             </div>
@@ -148,7 +182,7 @@
         </div>
         <div class="lg:w-1/2 flex justify-center lg:justify-end">
           <div class="relative">
-            <img alt="Portrait of a person with short hair, wearing a black shirt, looking directly at the camera" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/ZHe4tXqPw2TYW6wceqcSHtQorUpvNXl0OxkZYaoeoGkPHDUnA.jpg" width="300"/>
+            <img alt="Portrait of a person with short hair, wearing a black shirt, looking directly at the camera" class="rounded-lg" style="margin-bottom: -180px;" height="200" src="/assets/solo (2).png" width="500"/>
             <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500 rounded-full"></div>
             <div class="absolute bottom-0 right-0 w-24 h-24 bg-orange-500 rounded-full"></div>
           </div>
@@ -156,55 +190,62 @@
       </div>
     </div>
   </div>
-  
 
-  <div class="text-center py-20">
-    <h1 class="text-2xl font-semibold mb-6">Here’s a shortlist of the available job opportunities here at C9 Freelancer:</h1>
-    <div class="grid grid-cols-2 gap-8 text-lg">
-      <div>
-        <p class="text-green-600 font-semibold py-2">Web Developers <i class="fas fa-arrow-right"></i></p>
-        <p class="py-2">Full-Stack Developers</p>
-        <p class="py-2">E-commerce Developers</p>
-        <p class="py-2">Graphics Artists</p>
-        <p class="py-2">Video Editors</p>
-        <p class="py-2">Copywriters</p>
-        <p class="py-2">Creative Writers</p>
-        <p class="py-2">SEO Specialists</p>
-        <p class="py-2">PPC Specialists</p>
-      </div>
-      <div>
-        <p class="py-2">SEM Specialists</p>
-        <p class="py-2">Media Buyers</p>
-        <p class="py-2">Social Media Managers</p>
-        <p class="py-2">Social Media Marketers</p>
-        <p class="py-2">Software Developers</p>
-        <p class="py-2">Web Application Developers</p>
-        <p class="py-2">Mobile Application Developers</p>
-        <p class="py-2">UX/UI Specialists</p>
-        <p class="font-semibold py-2">And more!</p>
-      </div>
-    </div>
-  </div>
-  
 
   
-<!-- Hero Section -->
-<div class="relative  bg-cover bg-center h-96 flex items-center justify-start py-20" style="background-image: url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/182B5/production/_111279989_053468858-1.jpg');">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    
-    <div class="relative z-10 p-8">
-      <h1 class="text-4xl font-bold text-white mb-4">
-        Get ahead of the competition.
-      </h1>
-      <button class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold">
-        Create Free Account
-      </button>
+  <div class="text-center py-12 mt-20">
+    <h1 class="text-4xl font-bold mb-6">Here’s a shortlist of the available<br>job opportunities here at C9 Freelancer:</h1>
+    <div class="flex justify-center mt-5 space-x-20"> <!-- Added space-x-20 for spacing between columns -->
+        <div class="text-left"> <!-- Remove margin and use Tailwind's spacing instead -->
+            <p class="text-green-600 font-bold leading-relaxed text-xl">Web Developers <i class="fas fa-arrow-right"></i></p>
+            <p class="leading-relaxed text-xl">Full-Stack Developers</p>
+            <p class="leading-relaxed text-xl">E-commerce Developers</p>
+            <p class="leading-relaxed text-xl">Graphics Artists</p>
+            <p class="leading-relaxed text-xl">Video Editors</p>
+            <p class="leading-relaxed text-xl">Copywriters</p>
+            <p class="leading-relaxed text-xl">Creative Writers</p>
+            <p class="leading-relaxed text-xl">SEO Specialists</p>
+            <p class="leading-relaxed text-xl">PPC Specialists</p>
+        </div>
+        <div class="text-left">
+            <p class="leading-relaxed text-xl">SEM Specialists</p>
+            <p class="leading-relaxed text-xl">Media Buyers</p>
+            <p class="leading-relaxed text-xl">Social Media Managers</p>
+            <p class="leading-relaxed text-xl">Social Media Marketers</p>
+            <p class="leading-relaxed text-xl">Software Developers</p>
+            <p class="leading-relaxed text-xl">Web Application Developers</p>
+            <p class="leading-relaxed text-xl">Mobile Application Developers</p>
+            <p class="leading-relaxed text-xl">UX/UI Specialists</p>
+            <p class="font-bold leading-relaxed text-xl">And more!</p>
+        </div>
     </div>
-  </div>
-  
-   <!-- Footer Section -->
-   <footer class="bg-white py-12">
+</div>
+
+
+<center><div style="width: 1200px;" class="relative w-full max-w-8xl rounded-lg overflow-hidden shadow-lg my-20">
+    <img style="height: 400px;" alt="A man with glasses drinking coffee while working on a laptop in a cozy kitchen" 
+         class="background-image background-size: cover; w-full" 
+         src="https://storage.googleapis.com/a1aa/image/zd0y4X87Wj71PtjjY8c8vcxap1TjbVkCJlLf3fS8UPnkuoqTA.jpg" />
+    <div  class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center pl-8">
+        <h1 class="text-white text-6xl font-semibold text-left">Get ahead</h1>
+        <p class="text-white text-6xl  font-semibold text-left">of the competition.</p>
+        <div class="mt-10 text-left ">
+            <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-md text-lg ">
+                Create Free Account
+            </a>
+        </div>
+    </div>
+</div>
+</center>
+
+
+
+
+
+
+
+ <!-- Footer Section -->
+ <footer class="bg-white py-12">
     <div class="container mx-auto px-4">
      <div class="flex justify-between items-center border-b pb-8 mb-8">
       <div class="flex items-center space-x-4">
@@ -238,52 +279,63 @@
        </p>
       </div>
      </div>
-     <div class="text-center mb-8">
-      <h2 class="text-2xl font-semibold text-left">
-       Our Locations
-      </h2>
-     </div>
-     <div class="flex justify-center space-x-16">
-      <div class="text-center">
-       <img alt="USA Flag" class="mx-auto mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/0X6Gz3rPRxYtIxVjfkYfFV7NqFkX3FWtlq9Ba2ClNngFlBqTA.jpg" width="40"/>
-       <h3 class="text-lg font-semibold">
+<div class="container mx-auto py-12">
+    <h1 class="text-4xl font-bold mb-8">
+     Our Locations
+    </h1>
+    <div class="flex justify-between items-start">
+     <div class="flex items-start space-x-2">
+      <img alt="USA flag" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/7Nt1tEkbCyJUKNE4daFQSgdMS7DklJVWYR83lOO8VMUTOq6E.jpg" width="20"/>
+      <div>
+       <h2 class="font-bold">
         USA
-       </h3>
-       <p class="text-gray-600">
+       </h2>
+       <p>
         5608 17th Ave. NW #766,
         <br/>
         Seattle, WA 98107, USA
        </p>
       </div>
-      <div class="text-center">
-       <img alt="Philippines Flag" class="mx-auto mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/SLvH8jtlT1qrKNok9D3r6cjTgo1vemrjtrA6RTkDF1GkyA1JA.jpg" width="40"/>
-       <h3 class="text-lg font-semibold">
+     </div>
+     <div class="flex items-start space-x-2">
+      <img alt="Philippines flag" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/dTLARHmwFuYhH1sDMq0CYjKzNRLRfmOG1TuGIUjRlpOncU1JA.jpg" width="20"/>
+      <div>
+       <h2 class="font-bold">
         PHILIPPINES
-       </h3>
-       <p class="text-gray-600">
-        One Global Place Level 10-1 5th Avenue Corner
+       </h2>
+       <p>
+        One Global Place Level 10-1 &amp; Level 20-1 5th Avenue Corner
         <br/>
-        25th Street Bonifacio Global City, Metro Manila, Philippines
+        25th Street Bonifacio Global City Metro Manila, Philippines
        </p>
       </div>
      </div>
-     <div class="text-center mt-8">
-      <p class="text-gray-600 text-left">
-       © 2020 C9Freelancer. All Rights Reserved.
-      </p>
-      <div class="flex justify-center space-x-4 mt-4">
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        Terms &amp; Conditions
-       </a>
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        Privacy Policy
-       </a>
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        Cookie Policy
-       </a>
-      </div>
+    </div>
+    <div class="mt-12 border-t pt-4 flex justify-between items-center text-sm text-gray-600">
+     <p>
+      © 2020 C9Freelancer. All Rights Reserved.
+     </p>
+     <div class="flex space-x-4">
+      <a class="hover:underline" href="#">
+       Terms &amp; Conditions
+      </a>
+      <span>
+       |
+      </span>
+      <a class="hover:underline" href="#">
+       Privacy Policy
+      </a>
+      <span>
+       |
+      </span>
+      <a class="hover:underline" href="#">
+       Cookie Policy
+      </a>
      </div>
     </div>
-   </footer>
- </body>
+   </div>
+
+
+
+</body>
 </html>
