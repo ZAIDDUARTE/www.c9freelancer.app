@@ -10,58 +10,8 @@
 
 </head>
 <body class="bg-white">
-
-    <div class="container mx-auto">
-        <nav class="flex items-center justify-between p-4">
-            <div class="flex items-center">
-                <img 
-                    alt="Company Logo" 
-                    class="h-10 w-10" 
-                    src="/assets/Firefox_Screenshot_2024-10-26T10-24-33.505Z.png" 
-                />
-                <span class="ml-2 text-xl font-semibold text-gray-800">C9Freelancer</span>
-            </div>
-    
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex space-x-8">
-                <a class="text-gray-800 hover:text-gray-600" href="#">Home</a>
-                <a class="text-gray-800 hover:text-gray-600" href="#">About</a>
-                <a class="text-gray-800 hover:text-gray-600" href="#">How It Works</a>
-                <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
-            </div>
-    
-            <!-- Buttons and Hamburger Icon -->
-            <div class="flex items-center space-x-4">
-                <button class="bg-green-500 text-white px-4 py-2 rounded hidden md:block">Join Now</button>
-                <button class="border border-green-500 text-green-500 px-4 py-2 rounded hidden md:block">Sign In</button>
-                <button id="menu-toggle" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-    
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden flex flex-col space-y-2 p-4 hidden">
-            <a class="text-gray-800 hover:text-gray-600" href="#">Home</a>
-            <a class="text-gray-800 hover:text-gray-600" href="#">About</a>
-            <a class="text-gray-800 hover:text-gray-600" href="#">How It Works</a>
-            <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
-            <button class="bg-green-500 text-white px-4 py-2 rounded">Join Now</button>
-            <button class="border border-green-500 text-green-500 px-4 py-2 rounded">Sign In</button>
-        </div>
-    </div>
-    
-
-<!-- JavaScript for toggle functionality -->
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
-
+     <!-- Placeholder for Navbar -->
+  <div id="navbar"></div>
 
 
 <div class="container mx-auto px-4 py-8 mt-20 relative">
@@ -102,48 +52,6 @@
 </div>
 
 
-<div class="text-center mt-20 py-20">
-    <h2 class="text-4xl font-semibold mb-4 text-gray-800">
-        Check out what some members
-        <br />
-        of C9 Freelancer have to say about the platform:
-    </h2>
-    <div class="flex flex-col md:flex-row items-center justify-center">
-        <div class="flex items-center space-x-8">
-            <div class="relative">
-                <img
-                    alt="Portrait of a smiling woman"
-                    class="rounded-full object-cover w-48 h-48 md:w-72 md:h-72"
-                    src="https://storage.googleapis.com/a1aa/image/FmIDhAeEA5V4SKvcurea4BsROy3RhjLsSSAVG62xjrrAMoqTA.jpg"
-                />
-                <div class="absolute top-0 left-0 bg-gray-800 text-white rounded-full p-2">
-                    <i class="fas fa-quote-left"></i>
-                </div>
-            </div>
-            <div class="text-left max-w-md">
-                <div class="text-gray-500 mb-2">1 / 4</div>
-                <p style="width: 600px;" class="text-gray-700 mb-4">
-                    “What makes us unique is our wide network of companies, employers, entrepreneurs, business owners, and agencies who share our vision of a future propelled by the globalization of talent, the emergence of exponential technologies, and the belief that tomorrow’s workforce is going to be dominated by remote professionals and freelancers.”
-                </p>
-                <div class="flex items-center">
-                    <div style="background-color: #f66744;" class="bg-orange-500 text-white rounded-full px-4 py-2">
-                        Carly C.
-                        <br />
-                        <span class="text-sm">UI/UX Designer, San Francisco</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="flex justify-center mt-4 space-x-4">
-        <button class="text-black hover:text-gray-700">
-            <i class="fas fa-arrow-left"></i>
-        </button>
-        <button class="text-black hover:text-gray-700">
-            <i class="fas fa-arrow-right"></i>
-        </button>
-    </div>
-</div>
 
 
 <div class="w-full py-16 sm:px-6 lg:px-8 my-20" style="background-color: #001f21;">
@@ -241,101 +149,11 @@
 
 
 
+<div id="footer"></div>
 
 
 
- <!-- Footer Section -->
- <footer class="bg-white py-12">
-    <div class="container mx-auto px-4">
-     <div class="flex justify-between items-center border-b pb-8 mb-8">
-      <div class="flex items-center space-x-4">
-         <img alt="C9Freelancer Logo" class="h-10" height="40" src="/assets/Firefox_Screenshot_2024-10-26T10-24-33.505Z.png" width="40"/>
-       <span class="text-xl font-semibold">
-        C9Freelancer
-       </span>
-      </div>
-      <div class="flex space-x-8">
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        Home
-       </a>
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        About
-       </a>
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        How It Works
-       </a>
-       <a class="text-gray-600 hover:text-gray-800" href="#">
-        Contact Us
-       </a>
-      </div>
-      <div class="text-right">
-       <h3 class="text-gray-800 font-semibold">
-        Support
-       </h3>
-       <p class="text-gray-600">
-        <i class="fas fa-envelope">
-        </i>
-        support@c9freelancer.com
-       </p>
-      </div>
-     </div>
-<div class="container mx-auto py-12">
-    <h1 class="text-4xl font-bold mb-8">
-     Our Locations
-    </h1>
-    <div class="flex justify-between items-start">
-     <div class="flex items-start space-x-2">
-      <img alt="USA flag" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/7Nt1tEkbCyJUKNE4daFQSgdMS7DklJVWYR83lOO8VMUTOq6E.jpg" width="20"/>
-      <div>
-       <h2 class="font-bold">
-        USA
-       </h2>
-       <p>
-        5608 17th Ave. NW #766,
-        <br/>
-        Seattle, WA 98107, USA
-       </p>
-      </div>
-     </div>
-     <div class="flex items-start space-x-2">
-      <img alt="Philippines flag" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/dTLARHmwFuYhH1sDMq0CYjKzNRLRfmOG1TuGIUjRlpOncU1JA.jpg" width="20"/>
-      <div>
-       <h2 class="font-bold">
-        PHILIPPINES
-       </h2>
-       <p>
-        One Global Place Level 10-1 &amp; Level 20-1 5th Avenue Corner
-        <br/>
-        25th Street Bonifacio Global City Metro Manila, Philippines
-       </p>
-      </div>
-     </div>
-    </div>
-    <div class="mt-12 border-t pt-4 flex justify-between items-center text-sm text-gray-600">
-     <p>
-      © 2020 C9Freelancer. All Rights Reserved.
-     </p>
-     <div class="flex space-x-4">
-      <a class="hover:underline" href="#">
-       Terms &amp; Conditions
-      </a>
-      <span>
-       |
-      </span>
-      <a class="hover:underline" href="#">
-       Privacy Policy
-      </a>
-      <span>
-       |
-      </span>
-      <a class="hover:underline" href="#">
-       Cookie Policy
-      </a>
-     </div>
-    </div>
-   </div>
-
-
-
+   <script src="navbar.js"></script>
+   <script src="footer.js"></script>
 </body>
 </html>
