@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="bg-white">
+     <!-- Placeholder for Navbar -->
+  <div id="navbar"></div>
+
+
+     <div class="container mx-auto px-4 py-16">
+      <div class="flex flex-col lg:flex-row items-center">
+       <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+         The Largest Directory of Digital Marketing Talent
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+         Your Go-To Guide for Hiring the Best Digital Marketing and IT Professionals
+        </p>
+        <div class="flex justify-center lg:justify-start space-x-4 mb-8">
+         <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-500">
+          </i>
+          <span>
+           Hire Staff Directly
+          </span>
+         </div>
+         <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-500">
+          </i>
+          <span>
+           No Commissions
+          </span>
+         </div>
+         <div class="flex items-center space-x-2">
+          <i class="fas fa-check-circle text-blue-500">
+          </i>
+          <span>
+           English Speaking
+          </span>
+         </div>
+        </div>
+        <button class="bg-green-500 text-white px-6 py-3 rounded-full font-bold">
+         Create Free Account TODAY!
+        </button>
+        <div class="flex justify-center lg:justify-start space-x-8 mt-8">
+         <img alt="Vorwerk logo" height="50" src="https://storage.googleapis.com/a1aa/image/LXKWLLSpszbiDdRqL1qWXnFiDeLe1MRymDQyFSic9m51lBrTA.jpg" width="100"/>
+         <img alt="ICRC logo" height="50" src="https://storage.googleapis.com/a1aa/image/eF0foiZjRStR5EalF0Vf3RSkZb6sn0hGPmzfh16O4ISewMYdC.jpg" width="100"/>
+         <img alt="Propel logo" height="50" src="https://storage.googleapis.com/a1aa/image/33ivTChF2P7eQC9tW9yE9twl297Rutwq0X5cxD604p1Czg1JA.jpg" width="100"/>
+         <img alt="Amax logo" height="50" src="https://storage.googleapis.com/a1aa/image/m0r1dNcesdVJPaIihN2f1Qvoohy8nevAydyDWfzIOpynXGsOB.jpg" width="100"/>
+         <img alt="Solum logo" height="50" src="https://storage.googleapis.com/a1aa/image/NrZOJXpfQ2z5eUiM3Mns4TZQ1JJhTst7sLVpjd2YyU0fLDWnA.jpg" width="100"/>
+        </div>
+       </div>
+       <div class="lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="relative grid grid-cols-4 gap-2">
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 1" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/zqPc7ripWSKJNlyqwGMajWRU0UtJVMoFImwfozlKeqU0lBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 2" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/GYieMvhJ8y1HMabfCWpLotJjXJfSQ9AtT1hxlLj4EeUBZGsOB.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 3" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/qHavSSkwat5fBqPDqz3z4wETAeBSGeImmuVUPceeGtSQxMYdC.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 4" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/eR6AKVLLuzVxJK3uvosbtaAcZwFluTH5t7488CJN5lI7yg1JA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 5" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/95vedEd50QRzMSeMWNWIEVcgOOe6Ixnpqfm6fFbWi6IEvMYdC.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 6" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/8K9seB8J1esIPkLruIM1vlYWZF6Vd11as7uaC5pCn1HJmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 7" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/J7yZNPaVE551LpCtTjrS6QAq6HouLo3vEBCWT3jS5C6gZw6E.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 8" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/fEQqbWy4FDSgQSUxMFJb58UCLkVwzvJi8v2LGQIk4JjAzg1JA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 9" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/O3mQf6JKUW36OSl0R5WIh7DZ6WQdjgHUieL0R8aHEpJCmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 10" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/4H7lFFOBLYoXEV2g7WdcpLrF2I1UckegxrjYf8R4DrYOmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 11" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/ebDPyHcHwSXCH6RNvLNSPMdRmeXoZ86cS6Q1a0v0ib2WmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 12" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/UPVd7GBFMjJzChibUCP5Dgdh9xRqyWXgPrf4kQ3LxpsGzg1JA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 13" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/7DDvipfd8KzOIyNqcYzFfozbGTwKoLwiTG9TQdNbAl8GmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 14" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/7xKeeUkhDdrfsIUmgOhvpfi3WkTd4yQhrmraxL4ZqSQtXGsOB.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 15" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/js4zqKkRYpq9FJDOrIbi39LnFYsZrBmyIELRYVEt5SXkZw6E.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 16" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/rzdyanhwVfR8Ai2GDOec009xvRRJ1pspRRSrswpIQi9TmBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 17" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/0iPH6mfGews0Ok6zhDzcLTqurckxo8SeJsML6cnN93N9LDWnA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 18" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/DVZR7uLVHYbVCl0ot1vu9slZRPvvPfRsNfIuicblGbUulBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 19" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/FLPr45X4Hi6uG5EsjelqrIbeU9Zz26cfDXP2cFKIa7eQZGsOB.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 20" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/7pqy0tvvfgyfCE2XKleohDMbLn3ay5u5pPO8YWhLRSHlLDWnA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 21" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/NbDADnjlJN7aHhvLtl7pC5ifxemE1iIlXNicBZY6vD9vlBrTA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-blue-500 rounded-full overflow-hidden">
+          <img alt="Person 22" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/2CUVuyAeMuUpFKF2eRoU781UHoSNm5ubeve8zBe4f2Qe4yg1JA.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-green-500 rounded-full overflow-hidden">
+          <img alt="Person 23" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/fbJmhu3QnLw6VSeJT28xXSnfgIPF2la1VU6eQdZyLoIvYGsOB.jpg" width="96"/>
+         </div>
+         <div class="w-24 h-24 bg-red-500 rounded-full overflow-hidden">
+          <img alt="Person 24" class="w-full h-full object-cover" height="96" src="https://storage.googleapis.com/a1aa/image/Zptro2C2u0bQHlvo9IAZZreuHmeG4Lf16iuEkToZXUQ5LDWnA.jpg" width="96"/>
+         </div>
+         <div class="absolute top-4 left-4 bg-white p-2 rounded-lg shadow-lg">
+          <span class="text-sm font-bold">
+           100%
+           <i class="fas fa-hand-rock">
+           </i>
+           Rockstar Freelancers
+          </span>
+         </div>
+         <div class="absolute bottom-4 right-4 bg-white p-2 rounded-lg shadow-lg">
+          <span class="text-sm font-bold">
+           21k+
+           <i class="fas fa-user">
+           </i>
+           Daily Online Users
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+  
+   
+
+
+
+     <div class="container mx-auto px-4 py-16">
+        <div class="text-center">
+         <h1 class="text-4xl font-bold">
+          <span class="text-green-500">
+           The future of work
+          </span>
+          is here and it’s dominated
+          <br/>
+          by
+          <span class="text-black">
+           remote work professionals and freelancers.
+          </span>
+         </h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center mt-12">
+         <div class="relative">
+          <img alt="A man smiling and holding a cup of coffee" class="rounded-full w-72 h-72 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/w5OCffEBabphTECjTjvmHfSJEeDb8q74xVn3Sfcl3PjkYNYdC.jpg" width="300"/>
+          <div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2">
+           <div class="flex flex-col items-center space-y-2 mt-20 pt-20 bg-orange-500 p-2 rounded-lg">
+            <img alt="Profile picture of a person" class="rounded-full w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/I0bnrNrV4T7WOhKPKIYeF213O7XaT3LTgY9EllY8m7Zj1g1JA.jpg" width="50"/>
+            <img alt="Profile picture of a person" class="rounded-full w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/I0bnrNrV4T7WOhKPKIYeF213O7XaT3LTgY9EllY8m7Zj1g1JA.jpg" width="50"/>
+            <img alt="Profile picture of a person" class="rounded-full w-12 h-12 object-cover" height="50" src="https://storage.googleapis.com/a1aa/image/I0bnrNrV4T7WOhKPKIYeF213O7XaT3LTgY9EllY8m7Zj1g1JA.jpg" width="50"/>
+            <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center text-2xl text-orange-500">
+             <i class="fas fa-plus">
+             </i>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="mt-8 md:mt-0 md:ml-12 text-gray-700 max-w-md">
+          <p>
+           It is estimated that in the next 5 years, more than 80% of the world’s biggest companies will be adapting remote work arrangements and hybrid workforces in one form or another. And of these industries, digital marketing and software development will be at the forefront catering both to B2B and B2C transactions.
+          </p>
+          <p class="mt-4">
+           And it is the mission of C9Freelancer to make sure YOU are positioned right in the middle of the upcoming high demand for creative digital professionals.
+          </p>
+          <button class="mt-6 bg-green-500 text-white px-6 py-3 rounded-full font-bold">
+           See How It Works
+          </button>
+         </div>
+        </div>
+       </div>
+
+
+
+
+       <div class="flex justify-center items-center py-20 my-20">
+        <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8 p-8">
+         <div class="text-center md:text-left">
+          <h1 class="text-3xl font-bold mb-4">
+           What is C9Freelancer?
+          </h1>
+          <p style="width: 548px;" class="text-gray-600 mb-4">
+           C9Freelancer is a startup building an exclusive talent database of the top digital marketing and software development professionals and freelancers in the world.
+          </p>
+          <p style="width: 548px;" class="text-gray-600 mb-4 ">
+           Our goal is to consolidate the best-in-class creative professionals in a one-stop-shop platform...
+          </p>
+          <p style="width: 548px;"  class="text-gray-600 ">
+           ...And connect them with top-tier digital marketing agencies and software development firms in the US, Canada, the UK, Europe, New Zealand, and Australia.
+          </p>
+         </div>
+         <div class="relative bg-orange-500 rounded-3xl p-8 text-center text-white">
+          <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+           <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+            <img alt="Flag of the UK" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/mtrQKtJ17oZkHxPefBB54bevNvHWedLRhftZl0iw20hfCcw6E.jpg" width="40"/>
+           </div>
+           <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+            <img alt="Flag of Canada" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/KuPWQpUeEb1Ff0GL1zwZfWdrezIyv46sapacOVsNCHwzAHsOB.jpg" width="40"/>
+           </div>
+           <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+            <img alt="Flag of the USA" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/N9r4zKveXenkgEBbPMHA954o06Na8QlkXTb8Zk6J1apKwBrTA.jpg" width="40"/>
+           </div>
+          </div>
+          <div class="mt-16">
+           <img alt="Profile picture of Allan Conner" class="w-20 h-20 rounded-full mx-auto mb-4" height="80" src="https://storage.googleapis.com/a1aa/image/fgfaglYidZmh7k7rUmei3Z2FTLFUULf29OrkisOyG0ghAHsOB.jpg" width="80"/>
+           <h2 class="text-2xl font-bold">
+            Allan Conner
+           </h2>
+           <p class="text-sm mb-4">
+            Social Media Manager
+           </p>
+           <button class="bg-white text-orange-500 font-bold py-2 px-4 rounded-full">
+            Contact Freelancer
+           </button>
+          </div>
+         </div>
+        </div>
+       </div>
+
+
+
+
+       <div class="flex justify-center pb-20"> 
+        <div class="flex items-center bg-white p-6 rounded-lg shadow-lg mx-4 md:mx-8 lg:mx-16">
+          <div class="relative">
+            <img alt="Portrait of a smiling person with arms crossed" class="rounded-full w-36 h-36 object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/Reecc3R6RDixnUlcfWpFfZffNpAwAmlafvQWXJlPmPzpc5g1JA.jpg" width="150"/>
+            <div class="absolute top-0 left-0 bg-teal-800 text-white p-2 rounded-full transform -translate-x-1/2 -translate-y-1/2">
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+          <div class="ml-6 max-w-xs">
+            <p class="text-gray-700 text-lg font-roboto">
+              “What makes us unique is our wide network of companies, employers, entrepreneurs, business owners, and agencies who share our vision of a future propelled by the globalization of talent, the emergence of exponential technologies, and the belief that tomorrow’s workforce is going to be dominated by remote professionals and freelancers.”
+            </p>
+            <div class="mt-4">
+              <p class="text-orange-500 font-bold text-lg">Philip Lew</p>
+              <p class="text-gray-500 text-sm">CEO of C9Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <center><div style="width: 1200px;" class="relative w-full max-w-8xl rounded-lg overflow-hidden shadow-lg my-20">
+        <img style="height: 400px;" alt="A man with glasses drinking coffee while working on a laptop in a cozy kitchen" 
+             class="background-image background-size: cover; w-full" 
+             src="https://storage.googleapis.com/a1aa/image/zd0y4X87Wj71PtjjY8c8vcxap1TjbVkCJlLf3fS8UPnkuoqTA.jpg" />
+        <div  class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center pl-8">
+            <h1 class="text-white text-6xl font-semibold text-left">Get ahead</h1>
+            <p class="text-white text-6xl  font-semibold text-left">of the competition.</p>
+            <div class="mt-10 text-left ">
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-md text-lg ">
+                    Create Free Account
+                </a>
+            </div>
+        </div>
+    </div>
+    </center>
+
+
+
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Why Should You Join C9Freelancer?</h2>
+        <p class="mt-4 text-lg text-gray-600">When you become a C9Freelancer, you get access to:</p>
+        <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                    <i class="fas fa-plus text-blue-500"></i>
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Fully flexible digital marketing and IT jobs</h3>
+                <p class="mt-2 text-base text-gray-600">Whether you’re looking for full-time work, a part-time job, or a freelancing gig, there’s always a perfect opportunity for you within our network of companies and employers.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                    <i class="fas fa-check text-blue-500"></i>
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Top-tier digital marketing agencies and IT firms</h3>
+                <p class="mt-2 text-base text-gray-600">We are partnered with elite companies and corporations located in the US, Canada, the UK, Europe, New Zealand, and Australia.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                    <i class="fas fa-dollar-sign text-blue-500"></i>
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">A career with a comfortable income while working from home</h3>
+                <p class="mt-2 text-base text-gray-600">Our network of employers are aware of your desire to work remotely from the comfort of your home and are willing to accommodate you.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100">
+                    <i class="fas fa-shield-alt text-blue-500"></i>
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">A safe and secure work ecosystem</h3>
+                <p class="mt-2 text-base text-gray-600">Our network of employers are fully vetted to ensure all employment agreements are legitimate.</p>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    
+
+<center>
+    <div class="bg-white rounded-lg py-20 my-20 shadow-lg p-8 flex items-center max-w-4xl">
+        <div class="w-1/2">
+         <img alt="A woman smiling and holding a laptop" class="rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/xbunAQTVFyJNDtX8LRXlGirlWchufxfKzmSI9wJFMeu90DWnA.jpg" width="600"/>
+        </div>
+        <div class="w-1/2 pl-8">
+         <div class="flex items-center mb-4">
+          <i class="fas fa-shield-alt text-blue-500 text-2xl">
+          </i>
+          <h1 class="text-2xl font-bold text-gray-800 ml-2">
+           Future-Proof Your Career
+           <br/>
+           with C9Freelancer
+          </h1>
+         </div>
+         <p class="text-gray-600 mb-4">
+          The C9Freelancer network is built by merging current and emergent technologies.
+         </p>
+         <p class="text-gray-600 mb-6">
+          We are continually working and discovering ways to leverage cloud storage and computing, web-based program applications, virtual networks, crypto, blockchain, and AI into a synergistic system designed to help you build a future-proof career.
+         </p>
+         <button class="bg-green-500 text-white px-6 py-2 rounded-full">
+          Create Free Account
+         </button>
+        </div>
+       </div>
+    </center>
+
+
+
+
+
+
+<center>
+    <div class="w-full max-w-4xl p-4 py-20 my-20">
+        <h1 class="text-2xl font-semibold text-center mb-8">Frequently Asked Questions:</h1>
+        <div class="grid grid-cols-2 gap-8">
+            <div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold text-green-500 flex justify-between items-center">
+                        How soon can I get hired if I join C9Freelancer?
+                        <i class="fas fa-minus"></i>
+                    </h2>
+                    <p class="text-sm text-gray-700 mt-2">
+                        You can get hired anywhere between a few days to a few weeks depending on how extensive your experience is. Also, the prevailing market demand for your particular skills will also determine how quickly you get hired.
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold flex justify-between items-center">
+                        How do I get paid?
+                        <i class="fas fa-plus"></i>
+                    </h2>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold flex justify-between items-center">
+                        Are there other opportunities available in C9Freelancer apart from those in the digital marketing and IT spaces?
+                        <i class="fas fa-plus"></i>
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold flex justify-between items-center">
+                        When I get hired by an employer, do we need to transact our business within the C9Freelancer platform?
+                        <i class="fas fa-plus"></i>
+                    </h2>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-lg font-semibold flex justify-between items-center">
+                        Can I transact with more than one employer at a time?
+                        <i class="fas fa-plus"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+       
+      
+
+<div id="footer"></div>
+
+
+
+   <script src="navbar.js"></script>
+   <script src="footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="bg-white">
+     <!-- Placeholder for Navbar -->
+  <div id="navbar"></div>
+
+<div class="container mx-auto px-4 py-16 flex flex-col items-center">
+    <div class="flex flex-col md:flex-row items-center w-full">
+     <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+      <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+       Helping Freelancers
+       <br/>
+       Be Free
+      </h1>
+      <p class="text-gray-600 mt-4">
+       Do you have further questions about how C9 Freelancer can become your springboard to a promising career as a freelancer?
+      </p>
+      <p class="text-gray-600 mt-2">
+       Email us at
+       <a class="text-green-600" href="mailto:support@c9freelancer.com">
+        support@c9freelancer.com
+       </a>
+       . We'd love to hear from you.
+      </p>
+     </div>
+     <div class="md:w-1/2 flex justify-center">
+      <div class="relative">
+       <img alt="Map showing Seattle location" class="rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/DJgPrk77XSb6NZGVZe87DrfxnLI0zITDALEskz9IHDl5JCrTA.jpg" width="600"/>
+       <div class="absolute top-4 left-4 bg-white p-2 rounded-lg shadow-lg flex items-center">
+        <i class="fas fa-map-marker-alt text-black mr-2">
+        </i>
+        <div>
+         <p class="text-sm font-semibold">
+          5608 17th Ave. NW #766
+         </p>
+         <p class="text-sm">
+          Seattle, WA 98107 USA
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+</div>
+
+
+   <div id="footer"></div>
+
+
+
+   <script src="navbar.js"></script>
+   <script src="footer.js"></script>
+</body>
+</html>
